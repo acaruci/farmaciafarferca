@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmacéutica Fernández</title>
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/perfil.css" />
+  <link rel="stylesheet" href="css/fortalezas.css" />
+  <link rel="stylesheet" href="css/productos.css">
+  <link rel="stylesheet" href="css/contacto.css">
+
+  <script defer src="js/app.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" />
+  
+</head>
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img height = "50" width = "50" src="img/LogoFarmacia.jpg" alt="Empresa"/>
+        <div>
+          Farmacia Farmacéutica Fernández, C.A. <br />
+          {code} 
+        </div>
+      </a>
+      <button class="open-menu" aria-label="Abrir Menu">
+        <img src="img/hamburger-icon.svg" alt="abrir menu" />
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar Menu">
+          <img src="img/close-icon.svg" alt="cerrar menu" />
+        </button>
+        <li><a href="#salud" class="seleccionado">Salud</a></li>
+        <li><a href="#belleza">Belleza</a></li>
+        <li><a href="#cuidadopersonal">Cuidado Personal</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="margen-horizontal margen-vertical">
+  <section class="perfil" id = "salud">
+    <div class="perfil-info"> 
+      <h1 class = "perfil-titulo">Bienvenidos a <br /> Farmacéutica Fernández, C.A.</h1>
+      <p class="perfil-descripcion">
+        Trabajamos desde el Corazón para su Salud <br />
+        <br />
+        Nuestra misión se centra en satisfacer las expetativas y necesidades
+        de nuestros clientes mediante la comercialización de productos farmacéuticos
+        y miscelaneos bajo los mayores estandares de calidad con un servicio profesional 
+        a la altura de sus exigencias. Contamos con un equipo multidiciplinario con la capacidad
+        y la experiencia para asumir con responsabilidad dicho reto, ante la sociedad, ante el Pais
+        y ante el mundo!
+        <br />
+      </p>
+      <button class="perfil-btn">
+        Descargar Catálogo
+      </button>
+    </div>
+    <span class="perfil-img">
+      <img class= "perfilimg-diseño" src="img/Farfercalogo.png" alt="logoempresa">
+      <div class="linea-img-perfil">
+      </div>
+    <span >
+  </section>
+</div>
+
+<section class="productos" id = "belleza">
+  <img src="img/wave.svg" alt="divide" class="divide-arriba">
+  <div class="productos-cuerpo">
+    <h2 class="titulo-producto">PRODUCTOS</h2>
+    <div class="grid-productos">
+      <div class="vacio"></div>
+      <div class="linea"></div>
+      <div class="producto">
+        <div class="producto-nombre">Atamel Forte</div>
+        <div class="producto-descripcion">500 Mg x 10 Tab</div>
+        <div class="producto-tratamiento">Malestar General Fiebre Gripe Dolor de Cabeza</div>
+        <div class="producto-costo">Costo: 450,00 / 4.5</div>
+      </div>
+      <div class="producto">
+        <div class="producto-nombre">Atrovarol Forte</div>
+        <div class="producto-descripcion">500 Mg x 10 Tab</div>
+        <div class="producto-tratamiento">Malestar General </div>
+        <div class="producto-costo">Costo: 1500,00 / 14.5</div>
+      </div>
+      <div class="linea"></div>
+      <div class="vacio"></div>
+      <div class="vacio"></div>
+      <div class="linea"></div>
+      <div class="producto">
+        <div class="producto-nombre">Atosvartatina leti</div>
+        <div class="producto-descripcion">500 Mg x 10 Tab</div>
+        <div class="producto-tratamiento">Fiebre Gripe </div>
+        <div class="producto-costo">Costo: 1450,00 / 7.5</div>
+      </div>
+    </div>
+  </div>
+  <img src="img/wave.svg" alt="divide" class="divide-abajo">
+</section>
+
+<div class="margen-horizontal margen-vertical">
+  <section class="fortalezas" id="fortalezas">
+    <h2 class="titulo-fortalezas">FORTALEZAS</h2>
+    <ul class="lista-fortalezas">
+      <li class="fortaleza-fortalezas">Servicio</li>
+      <li class="fortaleza-fortalezas">Comodidad</li>
+      <li class="fortaleza-fortalezas">Stock</li>
+      <li class="fortaleza-fortalezas">Acceso</li>
+      <li class="fortaleza-fortalezas">Alcance</li>
+      <li class="fortaleza-fortalezas">Empatía</li>
+    </ul>
+  </section>
+</div>
+<div class="margen-horizontal margen-vertical">
+  <section class="contact" id="contact">
+    <h2 class = "contact-title">Contacto</h2>
+    <div class = "contact-details">
+      <div class="contact-details-group">
+        <p class="contact-label">Dirección:</p>
+        <p class="contact-text">Calle Carabobo Norte Nro 81 Edif Mount Broulé</p>
+      </div>
+      <div class="contact-details-group">
+        <p class="contact-label">Email:</p>
+        <p class="contact-text">farfercaonline@gmail.com</p>
+      </div>
+      <div class="contact-details-group">        
+        <p class="contact-text">Deje su mensaje y le responderemos!</p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <div class="contact-form-group">
+        <label for="name">Nombre:</label>
+        <input required type="text" name="name" id="name">
+      </div>
+      <div class="contact-form-group">
+        <label for="email">Email:</label>
+        <input required type="email" name="email" id="email">
+      </div>
+      <div class="contact-form-group">
+        <label for="message">Mensaje:</label>
+        <textarea required name="message" id="message" rows="6"></textarea>
+      </div>
+      <button type="submit" class ="contact-form-submit">Enviar</button>
+    </form>
+    <nav class="social">
+      <ul class="social-list">
+        <li>
+          <a href="https://twitter.com/farmaciafarferca">
+            <img src="img/redsocial/twitter.svg" alt="twitter profile">
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/farmaciafarferca">
+            <img src="img/redsocial/youtube.svg" alt="facebook profile">
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/farmaciafarferca">
+            <img src="img/redsocial/github.svg" alt="instagram profile">
+          </a>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/">
+            <img src="img/redsocial/linkedin.svg" alt="whatsapp profile">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</div>
+</body>
+</html>

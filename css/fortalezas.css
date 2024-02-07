@@ -1,0 +1,41 @@
+.fortalezas {
+  max-width: 980px;
+  margin: 0 auto;
+}
+/*Configuraciorn del menu de la sección fortalezas*/
+.titulo-fortalezas {
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+}
+/*listado de fortalezas*/
+.fortaleza-fortalezas {
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 42px;
+  padding: 0.5em 0.7em;
+  margin: 10px;
+}
+/*Lista de las fortalezas*/
+.lista-fortalezas {
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lista-fortalezas:hover {
+  filter: brightness(300%);
+  
+}
+@media (min-width: 950px) {
+  .titulo-fortalezas {
+    font-size: 30px;
+  }
+  .fortaleza-fortalezas {
+    font-size: 20px;
+    margin: 20px;
+  }
+}

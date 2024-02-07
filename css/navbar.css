@@ -1,0 +1,128 @@
+/*Configuración de la barra de menu Superior*/
+.topheader {
+  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  position: fixed;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+/*Configuración de la barra de Navegación*/
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+/*Configuración del Logo*/
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+/*Configuración de la Imagen del Logo*/
+.logo img {
+  border-radius: 10%;
+}
+/*Configuración del menu de Opciones*/
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*Configuración de la lista de opciones*/
+.menu li {
+  padding: 0 15px;
+}
+/*Configuración de los enlaces de las opciones*/
+.menu a {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+/*Añade comentarios al seleccionar la opcion de la barra de menu*/
+.menu a::after {
+  content: "";
+  background: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.menu a.seleccionado::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+/*efecto de seleccion de la opcion en el menu de la barra*/
+.menu a:hover {
+  color: var(--primary-color);
+}
+/*Configuración de los botones de menu*/
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/*Configuración de pantalla para dispositivo movil*/
+@media (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.7s;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: var(--text-color-inverse);
+    line-height: 60px;
+    font-size: 18px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .close-menu {
+    align-self: flex-end;
+    padding: 23px 20px;
+  }
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+  /*Añade comentarios al seleccionar la opcion de la barra de menu*/
+  .menu a::after {
+    content: none;
+  }
+  .menu a:hover,
+  .menu a.selecionado {
+    color: var(--secondary-color);
+  }
+}

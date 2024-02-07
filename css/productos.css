@@ -1,0 +1,82 @@
+.productos {
+  display: flex;
+  flex-direction: column;
+}
+.productos-cuerpo {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+.divide-arriba {
+  width: 100;
+  position: relative;
+  top: 2px;
+}
+.divide-abajo {
+  transform: scaleY(-1);
+  top: -2px;
+}
+.titulo-producto {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}
+.producto-nombre {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.producto-descripcion {
+  font-size: 20px;
+  /*text-transform:uppercase*/
+  margin-top: 5px;
+}
+.producto-tratamiento {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.producto-costo {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.producto {
+  padding: 20px;
+  max-width: 500px;
+}
+
+@media (min-width: 950px) {
+  .grid-productos {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .linea {
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+  .linea::before,
+  .linea::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+  .linea::after {
+    top: 100%;
+    z-index: 1;
+  }
+  .producto {
+    padding: 0;
+  }
+}
